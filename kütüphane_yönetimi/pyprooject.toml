@@ -1,0 +1,8 @@
+[project]
+name = "kütüphane_yönetimi"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[project.scripts]
+
+kütüphane_uygulaması= "kütüphane_yönetimi.main:run"
