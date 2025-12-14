@@ -9,10 +9,10 @@ Base.metadata.create_all(bind=engine)
 async def run():
     service = WeatherService(WeatherRepository())
 
-    print("Hava durumu alınıyor...")
+    print("Hava durumu aliniyor...")
     await service.fetch_and_save("Istanbul")
 
-    print("\nKayıtlı hava durumu verileri:")
+    print("\nKayitli hava durumu verileri:")
     for w in service.list_records():
         print(f"{w.city} | {w.temperature}°C | {w.description}")
 
