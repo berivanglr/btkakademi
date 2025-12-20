@@ -12,5 +12,5 @@ print(f"Maaşa göre siralama:\n {sorted_df}")
 sorted_df_filtreleme= df.groupby("departman") ["maas"]. mean()
 print(f"Departmanlarina göre ortalama maas siralamasi:\n {sorted_df_filtreleme}")
 
-print(f"Null değerler: \n{df.isnull().sum()}")
+print(f"Dosyanin Null değerler: \n{df.isnull().sum()}")
 df.fillna(0, inplace = True)
